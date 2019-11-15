@@ -1,0 +1,58 @@
+hw-mac-engine:
+  incdirs : [
+    .
+  ]
+  files : [
+        AC1.sv,
+        AC1_SR.sv,
+        AC1_adder.sv,
+        AC1_mux.sv,
+        AC2.sv,
+        AC2_SR.sv,
+        AC2_adder.sv,
+        AC2_mux.sv,
+        AC3.sv,
+        AC3_SR.sv,
+        AC3_adder.sv,
+        AC3_mux.sv,
+        Activ_mod_SR.sv,
+        Bit_Adder.sv,
+        Bit_Register.sv,
+        CTRL_CNT_AC1.sv,
+        CTRL_CNT_AC2.sv,
+        CTRL_CNT_DONE.sv,
+        CTRL_CNT_DONE_QUANT.sv,
+        CTRL_CNT_FIL_GROUP.sv,
+        CTRL_CNT_IN_VOL.sv,
+        CTRL_CNT_OUT_MUX.sv,
+        CTRL_CNT_ReLU_MUX.sv,
+        CTRL_CNT_TOP.sv,
+        CTRL_CNT_Wbit.sv,
+        CTRL_FSM.sv,
+        CTRL_SR_WE.sv,
+        CTRL_UNIT.sv,
+        DP_mux.sv,
+        Data_Path_1x64.sv,
+        FF_quant.sv,
+        Input_Register.sv,
+        Posedge_detector.sv,
+        ReLU_mux.sv,
+        S_MAC_block.sv,
+        mac_package.sv,
+        mac_fsm.sv,
+        mac_ctrl.sv,
+        mac_streamer.sv,
+        mac_engine.sv,
+        mac_top.sv,
+        mac_top_wrap.sv,
+        neg_block.sv,
+        quant_mux.sv,
+        quantize_ReLU.sv,        
+        tb_acc_top.sv,
+        tb_dummy_memory.sv
+  ]
+  vlog_opts : [
+    "-L hwpe_ctrl_lib",
+    "-L hwpe_stream_lib"
+  ]
+
